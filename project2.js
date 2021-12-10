@@ -31,7 +31,7 @@ $(".showpage").on(`click`,()=>{
     $(".top").hide()
     $(".containerThree").show() //
 })
-// new
+// new action show
 $("#Action").on(`click`,()=>{
     $(`.showAction`).show()
     $(".containerThree").hide()
@@ -40,7 +40,15 @@ $(".showpage").on(`click`,()=>{
     $(`.showAction`).hide()
     $(".containerThree").show() //
 })
-
+//...............//
+$("#Romantic").on(`click`,()=>{
+    $(`.showRomantic`).show()
+    $(".containerThree").hide()
+})
+$(".showpage").on(`click`,()=>{
+    $(`.showRomantic`).hide()
+    $(".containerThree").show() //
+})
 //
  $("svg").on(`click`,()=>{
      $(`.top`).show()
