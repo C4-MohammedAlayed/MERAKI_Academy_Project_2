@@ -88,7 +88,7 @@ button{
 }
 .containerTwo{
   grid-area: mov2;
-  background-color: yellow;
+  background-color:yellow;
 }
 .sub{
    min-height: 15%;
@@ -104,6 +104,12 @@ display: flex;
 justify-content: space-around;
 
 }
+.movieTwo{
+height: 85%;
+background-color: black;
+display: flex;
+justify-content: space-around;
+}
 
 .action{
     display: flex;
@@ -112,6 +118,16 @@ justify-content: space-around;
     /* border: 2px solid red; */
 }
 .action:hover{
+    box-shadow: 2px 2px 2px red;
+    cursor: pointer;
+}
+.romantic{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: red;
+}
+.romantic:hover{
     box-shadow: 2px 2px 2px red;
     cursor: pointer;
 }
