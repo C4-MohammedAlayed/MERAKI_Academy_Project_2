@@ -1,23 +1,34 @@
 //show/hide Favourite
 $(".showFavourite").on(`click`,()=>{
     $(".Favourite").show()
+    $(".containerThree").hide()//
 })
 $(".showpage").on(`click`,()=>{
     $(".Favourite").hide()
+    $(".containerThree").show() //
+      
 })
 //show/hide history
 $(".showHistory").on(`click`,()=>{
     $(".history").show()
+    $(".containerThree").hide()//
 })
 $(".showpage").on(`click`,()=>{
     $(".history").hide()
+    $(".containerThree").show() //
 })
 //show/hide top
 $(".showTop").on(`click`,()=>{
     $(".top").show()
+    $(".containerThree").hide() //
+
+    
+      
+
 })
 $(".showpage").on(`click`,()=>{
     $(".top").hide()
+    $(".containerThree").show() //
 })
 
  $("svg").on(`click`,()=>{

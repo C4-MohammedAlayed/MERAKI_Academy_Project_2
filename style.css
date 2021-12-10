@@ -32,7 +32,6 @@ a{
 .page{
     width: 100%;
     height: 100%;
-    background-color: lightcoral;
     position: absolute;
     display: grid;
     grid-template-columns: repeat(10,1fr);
@@ -188,13 +187,15 @@ i{
     background-color: rgb(173, 230, 190);
     position: absolute;
     display:none;
+    
 }
 .Favourite{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color:burlywood;
     position: absolute;
     display:none;
+    overflow-y: hidden;
 }
 .history{
     width: 100%;
@@ -202,6 +203,7 @@ i{
     background-color: lightblue;
     position: absolute;
     display:none;
+    
 }
 
  img{
