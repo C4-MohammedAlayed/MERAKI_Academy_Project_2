@@ -87,24 +87,40 @@ button{
 }
 .sub{
    min-height: 15%;
-    background-color: white;
+    background-color:black;
     padding-left: 30px;
     display: flex;
     align-items: center;
 }
 .movie{
 height: 85%;
-background-color: violet;
+background-color: black;
 display: flex;
 justify-content: space-around;
 }
 .action{
     display: flex;
     flex-direction: column;
+    width: 200px;
 }
 .description{
     height: 70px;
-    background-color: tomato;
+    background-color: black;
+    position: relative;
+    padding-left: 10px;
+    color: white;
+    
+    
+}
+.container .sub h2{
+    color: white;
+}
+
+
+i{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 .top{
     width: 100%;
