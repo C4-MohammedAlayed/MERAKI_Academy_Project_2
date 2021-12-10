@@ -99,6 +99,7 @@ button{
 grid-area: mov3;
   
 }
+
 .sub{
    min-height: 15%;
     background-color:black;
@@ -125,6 +126,7 @@ background-color: black;
 display: flex;
 justify-content: space-around;
 }
+
 
 .action{
     display: flex;
@@ -209,21 +211,21 @@ i{
 .showAction{
     width: 100%;
     height: 100%;
-    background-color: lightblue;
+    background-color: black;
     position: absolute;
     display:none;
 }
 .showRomantic{
     width: 100%;
     height: 100%;
-    background-color: rgb(218, 230, 173);
+    background-color: black;
     position: absolute;
     display:none;
 }
 .showTV{
     width: 100%;
     height: 100%;
-    background-color: rgb(218, 230, 173);
+    background-color: black;
     position: absolute;
     display:none;
 }
@@ -232,3 +234,22 @@ i{
     width: 200px;
     height: 185px;
 } 
+
+/*Favourite*/
+.movieFavourite{
+    height: 255px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+
+    }
+    h3{
+        color: white;
+    }
+/*topMovie*/
+    .topMovie{
+        height: 255px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    }
