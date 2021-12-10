@@ -15,6 +15,7 @@ $(".showHistory").on(`click`,()=>{
 })
 $(".showpage").on(`click`,()=>{
     $(".history").hide()
+    
     $(".containerThree").show() //
 })
 //show/hide top
@@ -30,7 +31,17 @@ $(".showpage").on(`click`,()=>{
     $(".top").hide()
     $(".containerThree").show() //
 })
+// new
+$("#Action").on(`click`,()=>{
+    $(`.showAction`).show()
+    $(".containerThree").hide()
+})
+$(".showpage").on(`click`,()=>{
+    $(`.showAction`).hide()
+    $(".containerThree").show() //
+})
 
+//
  $("svg").on(`click`,()=>{
      $(`.top`).show()
  })
