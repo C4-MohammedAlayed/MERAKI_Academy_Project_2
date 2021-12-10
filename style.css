@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: cursive, Helvetica, sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 ul{
     list-style-type: none;
     display: flex;
@@ -33,10 +36,11 @@ a{
     position: absolute;
     display: grid;
     grid-template-columns: repeat(10,1fr);
-   grid-template-rows: 60px 300px 300px 250px;
+   grid-template-rows: 60px 300px 300px 300px;
    grid-template-areas:"nav nav nav nav nav nav nav nav nav nav"
    "mov mov mov mov mov mov mov mov mov mov"
    "mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2"
+   "mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3"
 }
 /*start navbar*/
 .nav{
@@ -70,6 +74,7 @@ a{
     background-color: black;
     display: flex;
     justify-content: flex-end;
+    padding-right: 20px
 }
 button{
     width: 80px;
@@ -84,11 +89,15 @@ button{
 
 .container{
   grid-area: mov;
-  background-color: yellow;
+  
 }
 .containerTwo{
   grid-area: mov2;
-  background-color:yellow;
+  
+}
+.containerThree{
+grid-area: mov3;
+  
 }
 .sub{
    min-height: 15%;
@@ -110,6 +119,12 @@ background-color: black;
 display: flex;
 justify-content: space-around;
 }
+.movieThree{
+height: 85%;
+background-color: black;
+display: flex;
+justify-content: space-around;
+}
 
 .action{
     display: flex;
@@ -118,7 +133,7 @@ justify-content: space-around;
     /* border: 2px solid red; */
 }
 .action:hover{
-    box-shadow: 2px 2px 2px red;
+    box-shadow: 2px 2px 2px  red;
     cursor: pointer;
 }
 .romantic{
@@ -127,7 +142,18 @@ justify-content: space-around;
     width: 200px;
     background-color: red;
 }
+
 .romantic:hover{
+    box-shadow: 2px 2px 2px red;
+    cursor: pointer;
+}
+.tv{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: red;
+}
+.tv:hover{
     box-shadow: 2px 2px 2px red;
     cursor: pointer;
 }
@@ -144,6 +170,9 @@ justify-content: space-around;
     color: white;
 }
 .containerTwo .sub h2{
+    color: white;
+}
+.containerThree .sub h2{
     color: white;
 }
 
