@@ -54,8 +54,8 @@ $(".showpage").on(`click`,()=>{
 // navbar.appendTo(page)
 // مشكلة غدم عمل ازرار buttom
 
-
-let items=[
+//..........action......//
+let action=[
     {
      link:'./img/ARMY.jpg',
      description:"Lorem ipsum dolor sit amet", //p
@@ -82,7 +82,7 @@ let items=[
     },
 ]
 
-items.forEach(element=>{
+action.forEach(element=>{
 const body =$(`body`)
 const movie =$(`.movie`)
 
@@ -98,6 +98,35 @@ $("svg").on(`click`,()=>{ //edit
 })
 action.appendTo(movie)
 })
+
+//romantic
+let action=[
+    {
+     link:'./img/ARMY.jpg',
+     description:"Lorem ipsum dolor sit amet", //p
+    },
+    {
+     link:'./img/ARMY.jpg',
+     description:"Lorem ipsum dolor sit amet ", 
+    },
+    {
+     link:'./img/ARMY.jpg',
+     description:"Lorem ipsum dolor sit amet ", 
+    },
+    {
+     link:'./img/ARMY.jpg',
+     description:"Lorem ipsum dolor sit amet  dsf", 
+    },
+    {
+     link:'./img/ARMY.jpg',
+     description:"Lorem ipsum dolor sit amet  dsf", 
+    },
+    {
+     link:'./img/ARMY.jpg',
+     description:"Lorem ipsum dolor sit amet  dsf", 
+    },
+]
+
 
 
 
