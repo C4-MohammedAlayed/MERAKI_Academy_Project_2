@@ -40,13 +40,22 @@ $(".showpage").on(`click`,()=>{
     $(`.showAction`).hide()
     $(".containerThree").show() //
 })
-//...............//
+//......new romantic show.........//
 $("#Romantic").on(`click`,()=>{
     $(`.showRomantic`).show()
     $(".containerThree").hide()
 })
 $(".showpage").on(`click`,()=>{
     $(`.showRomantic`).hide()
+    $(".containerThree").show() //
+})
+//....new TV show.....//
+$("#TV").on(`click`,()=>{
+    $(`.showTV`).show()
+    //$(".containerThree").hide()
+})
+$(".showpage").on(`click`,()=>{
+    $(`.showTV`).hide()
     $(".containerThree").show() //
 })
 //
