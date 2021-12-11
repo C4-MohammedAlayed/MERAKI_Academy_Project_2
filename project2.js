@@ -246,28 +246,28 @@ TV.forEach((element) => {
 //Top
 let Top = [
   {
-    link: "./img/ARMY.jpg",
-    description: "Lorem ipsum dolor sit amet", //p
+    link: "./img/dark.jpg",
+    description: "Action Fantasy crime IMDb :9/10", //p
   },
   {
-    link: "./img/madMax.jpg",
-    description: "Lorem ipsum dolor sit amet ",
+    link: "./img/Inception.jpg",
+    description: "action Mystery & thriller IMDb :8.8/10",
+  },
+  {
+    link: "./img/la_la_land.jpg",
+    description: "Musical Drama Romance  IMDb :8/10",
+  },
+  {
+    link: "./img/Nootbook_.jpg",
+    description: "Drama, Romance family  IMDb :7.8/10",
+  },
+  {
+    link: "./img/GOT.jpg",
+    description: "Laction series  war <br> IMDb :9.2/10",
   },
   {
     link: "./img/friends.jpeg",
-    description: "Lorem ipsum dolor sit amet ",
-  },
-  {
-    link: "./img/mebeforeyou.jpg",
-    description: "Lorem ipsum dolor sit amet  dsf",
-  },
-  {
-    link: "./img/Extraction.jpg",
-    description: "Lorem ipsum dolor sit amet  dsf",
-  },
-  {
-    link: "./img/ARMY.jpg",
-    description: "Lorem ipsum dolor sit amet  dsf",
+    description: "comedy series family IMDb :8.8/10",
   },
 ];
 
