@@ -112,7 +112,7 @@ let action = [
     id: "4",
 
     link: "./img/Inception.jpg",
-    description: "actio Mystery & thriller IMDb :8.8/10",
+    description: "action Mystery & thriller IMDb :8.8/10",
   },
   {
     id: "5",
@@ -155,27 +155,27 @@ $(`svg`).on("click", () => {
 let romantic = [
   {
     link: "./img/mebeforeyou.jpg",
-    description: "Lorem ipsum dolor sit amet A", //p
+    description: "Romance Drama  family IMDb :7.2/10", //p
   },
   {
     link: "./img/Titanic.jpg",
-    description: "Lorem ipsum dolor sit amet B",
+    description: "Drama History Romance IMDb :7.8/10",
   },
   {
     link: "./img/Nootbook_.jpg",
-    description: "Lorem ipsum dolor sit amet C",
+    description: "Drama, Romance family  IMDb :7.8/10",
   },
   {
     link: "./img/la_la_land.jpg",
-    description: "Lorem ipsum dolor sit amet  dsf",
+    description: "Musical Drama Romance  IMDb :8/10",
   },
   {
     link: "./img/AboutTime.jpg",
-    description: "Lorem ipsum dolor sit amet  dsf",
+    description: "Romance Fantasy family IMDb :7.8/10",
   },
   {
     link: "./img/stars.jpg",
-    description: "Lorem ipsum dolor sit amet  dsf",
+    description: "Romance Drama family IMDb :7.8/10",
   },
 ];
 
