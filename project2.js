@@ -317,5 +317,5 @@ function addFav(obj) {
 //JSON.parse(localstorge.getItem('Myfav'))
 
 
-
+// save 2
  
