@@ -95,36 +95,36 @@ let action = [
   {
     id: "1",
     link: "./img/GOT.jpg",
-    description: "Lorem ipsum dolor sit amet A", //p
+    description: "action series  war <br> IMDb :9.2/10", //p
   },
   {
     id: "2",
     link: "./img/Extraction.jpg",
-    description: "Lorem ipsum dolor sit amet B",
+    description: "action crime  thriller IMDb :6.7/10",
   },
   {
     id: "3",
 
     link: "./img/madMax.jpg",
-    description: "Lorem ipsum dolor sit amet C",
+    description: "action fury   thriller IMDb :8.1/10",
   },
   {
     id: "4",
 
     link: "./img/Inception.jpg",
-    description: "Lorem ipsum dolor sit amet  D",
+    description: "actio Mystery & thriller IMDb :8.8/10",
   },
   {
     id: "5",
 
     link: "./img/Tenet.png",
-    description: "Lorem ipsum dolor sit amet  E",
+    description: "Horror Mystery & action IMDb :7.2/10",
   },
   {
     id: "6",
 
     link: "./img/dark.jpg",
-    description: "Lorem ipsum dolor sit amet  F",
+    description: " Action Fantasy crime IMDb :9/10",
   },
 ];
 
