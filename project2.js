@@ -169,23 +169,23 @@ let romantic=[
      description:"Lorem ipsum dolor sit amet A", //p
     },
     {
-     link:'./img/mebeforeyou.jpg',
+     link:'./img/Titanic.jpg',
      description:"Lorem ipsum dolor sit amet B", 
     },
     {
-     link:'./img/mebeforeyou.jpg',
+     link:'./img/Nootbook_.jpg',
      description:"Lorem ipsum dolor sit amet C", 
     },
     {
-     link:'./img/mebeforeyou.jpg',
+     link:'./img/la_la_land.jpg',
      description:"Lorem ipsum dolor sit amet  dsf", 
     },
     {
-     link:'./img/mebeforeyou.jpg',
+     link:'./img/AboutTime.jpg',
      description:"Lorem ipsum dolor sit amet  dsf", 
     },
     {
-     link:'./img/mebeforeyou.jpg',
+     link:'./img/stars.jpg',
      description:"Lorem ipsum dolor sit amet  dsf", 
     },
 ]
