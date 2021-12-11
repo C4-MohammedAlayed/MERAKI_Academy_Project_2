@@ -93,48 +93,72 @@ $(".showpage").on(`click`,()=>{
 // navbar.appendTo(page)
 // مشكلة غدم عمل ازرار buttom
 
+//FAVourirte
+// let favourirte=[];
+       
+
 //..........action......//
+
 let action=[
     {
+    id:'1',
      link:'./img/ARMY.jpg',
-     description:"Lorem ipsum dolor sit amet", //p
+     description:"Lorem ipsum dolor sit amet A", //p
     },
     {
-     link:'./img/ARMY.jpg',
-     description:"Lorem ipsum dolor sit amet ", 
+        id:'2',
+     link:'./img/Extraction.jpg',
+     description:"Lorem ipsum dolor sit amet B", 
     },
     {
-     link:'./img/ARMY.jpg',
-     description:"Lorem ipsum dolor sit amet ", 
+        id:'3',
+
+     link:'./img/madMax.jpg',
+     description:"Lorem ipsum dolor sit amet C", 
     },
     {
-     link:'./img/ARMY.jpg',
-     description:"Lorem ipsum dolor sit amet  dsf", 
+        id:'4',
+
+     link:'./img/Inception.jpg',
+     description:"Lorem ipsum dolor sit amet  D", 
     },
     {
-     link:'./img/ARMY.jpg',
-     description:"Lorem ipsum dolor sit amet  dsf", 
+        id:'5',
+
+     link:'./img/Tenet.png',
+     description:"Lorem ipsum dolor sit amet  E", 
     },
     {
-     link:'./img/ARMY.jpg',
-     description:"Lorem ipsum dolor sit amet  dsf", 
+        id:'6',
+
+     link:'./img/dark.jpg',
+     description:"Lorem ipsum dolor sit amet  F", 
     },
 ]
 
-action.forEach(element=>{
+action.forEach((element,index)=>{
+
 const body =$(`body`)
 const movie =$(`.movie`)
+//.off('click')
+// $(`#${element.id}`).unbind().on('click',()=>{
+//     return addFav(element);
+// })
+$(`svg`).on('click',()=>{
+    addFav(element)
+    element.isPropagationStopped()
+});
+ 
 
- const action=$(` <div class="action"><img src="${element.link}" alt=""><div class="description">
+ let action=$(` <div  class="action"><img id='${element.id}' src="${element.link}" alt=""><div class="description">
  <p>${element.description}</p>
- <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+ <i id='${element.id}'  class="bi bi-heart"><svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
    </svg></i>
 </div>
 </div>`)
-$("svg").on(`click`,()=>{ //edit 
-    $(`.top`).show()
-})
+//edit 
+
 action.appendTo(movie)
 })
 
@@ -142,15 +166,15 @@ action.appendTo(movie)
 let romantic=[
     {
      link:'./img/mebeforeyou.jpg',
-     description:"Lorem ipsum dolor sit amet", //p
+     description:"Lorem ipsum dolor sit amet A", //p
     },
     {
      link:'./img/mebeforeyou.jpg',
-     description:"Lorem ipsum dolor sit amet ", 
+     description:"Lorem ipsum dolor sit amet B", 
     },
     {
      link:'./img/mebeforeyou.jpg',
-     description:"Lorem ipsum dolor sit amet ", 
+     description:"Lorem ipsum dolor sit amet C", 
     },
     {
      link:'./img/mebeforeyou.jpg',
@@ -177,9 +201,16 @@ romantic.forEach(element=>{
        </svg></i>
     </div>
     </div>`)
-    $("svg").on(`click`,()=>{ //edit 
-        $(`.top`).show()
-    })
+    $(`svg`).on('click',()=>{
+        addFav(element)
+        element.isPropagationStopped()
+    });
+    // $("svg").on(`click`,()=>{ //edit 
+    //     favourirte.push({
+    //         link:`${element.link}`,
+    //         description:`${element.description}`
+    //     })
+    // })
     romantic.appendTo(movieTwo)
     })
 
@@ -223,57 +254,40 @@ TV.forEach(element=>{
        </svg></i>
     </div>
     </div>`)
-    $("svg").on(`click`,()=>{ //edit 
-        $(`.top`).show()
-    })
+    // $("svg").on(`click`,()=>{ //edit 
+    //     favourirte.push({
+    //     link:`${element.link}`,
+    //     description:`${element.description}`
+    //     })
+    // })
     TV.appendTo(movieThree)
     })
 
 
    //FAVourirte
-    let favourirte=[
-        {
-         link:'./img/ARMY.jpg',
-         description:"Lorem ipsum dolor sit amet", //p
-        },
-        {
-         link:'./img/ARMY.jpg',
-         description:"Lorem ipsum dolor sit amet ", 
-        },
-        {
-         link:'./img/ARMY.jpg',
-         description:"Lorem ipsum dolor sit amet ", 
-        },
-        {
-         link:'./img/ARMY.jpg',
-         description:"Lorem ipsum dolor sit amet  dsf", 
-        },
-        {
-         link:'./img/ARMY.jpg',
-         description:"Lorem ipsum dolor sit amet  dsf", 
-        },
-        {
-         link:'./img/ARMY.jpg',
-         description:"Lorem ipsum dolor sit amet  dsf", 
-        },
-    ]
+    //let favourirte=[]
+       
 
-    TV.forEach(element=>{
-        const body =$(`body`)
-        const movieFavourite =$(`.movieFavourite`)
+    // favourirte.forEach(element=>{
+    //     const body =$(`body`)
+    //     const movieFavourite =$(`.movieFavourite`)
         
-         const Favourite=$(` <div class="tv"><img src="${element.link}" alt=""><div class="description">
-         <p>${element.description}</p>
-         <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-           </svg></i>
-        </div>
-        </div>`)
-        $("svg").on(`click`,()=>{ //edit 
-            $(`.top`).show()
-        })
-        Favourite.appendTo(movieFavourite)
-        })
+    //      const Favourite=$(` <div class="tv"><img src="${element.link}" alt=""><div class="description">
+    //      <p>${element.description}</p>
+    //      <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+    //          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+    //        </svg></i>
+    //     </div>
+    //     </div>`)
+    //     // $("svg").on(`click`,()=>{ //edit 
+    //     //     favourirte.push({
+    //     //         link:`${element.link}`,
+    //     //         description:`${element.description}`
+    //     //     })
+    //     // })
+    //     Favourite.appendTo(movieFavourite)
+    //     })
+    //     console.log(favourirte);
 
 
 
@@ -319,9 +333,33 @@ TV.forEach(element=>{
            </svg></i>
         </div>
         </div>`)
-        $("svg").on(`click`,()=>{ //edit 
-            $(`.top`).show()
-        })
+        // $("svg").on(`click`,()=>{ //edit 
+        //     favourirte.push({
+        //         link:`${element.link}`,
+        //         description:`${element.description}`
+        //     })
+        // })
         top.appendTo(topMovie)
         })
         /*Save*/
+        function addFav(obj) {
+            alert('move was added')
+            console.log(obj);
+                const body =$(`body`)
+                const movieFavourite =$(`.movieFavourite`)
+                
+                 const Favourite=$(` <div class="tv"><img src="${obj.link}" alt=""><div class="description">
+                 <p>${obj.description}</p>
+                 <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                   </svg></i>
+                </div>
+                </div>`)
+                // $("svg").on(`click`,()=>{ //edit 
+                //     favourirte.push({
+                //         link:`${element.link}`,
+                //         description:`${element.description}`
+                //     })
+                // })
+                Favourite.appendTo(movieFavourite)
+        }
