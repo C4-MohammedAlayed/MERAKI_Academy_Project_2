@@ -57,7 +57,23 @@ $(".showpage").on(`click`, () => {
 $("svg").on(`click`, () => {
   $(`.top`).show();
 });
+let favourirte=[];
+let movieFavourite =$(`.movieFavourite`)
+function check() {
+    if (localStorage.getItem('Myfav')) {
+        console.log(localStorage.getItem('Myfav'));
+        favourirte = JSON.parse(localStorage.getItem('Myfav'));
+    }
+    else
+    {
+        localStorage.setItem('Myfav',JSON.stringify([]));
+    }
+}
+check()
 
+function clearFav() {
+    localStorage.removeItem('Myfav')
+}
 // const body =$("body")
 // const main =$( `.main`) //<div class="main"></div>
 // main.appendTo(body)
@@ -87,9 +103,11 @@ $("svg").on(`click`, () => {
 // مشكلة غدم عمل ازرار buttom
 
 //FAVourirte
-// let favourirte=[];
+ 
 
 //..........action......//
+
+
 
 let action = [
   {
@@ -132,19 +150,34 @@ action.forEach((element, index) => {
   const body = $(`body`);
   const movie = $(`.movie`);
   
+
+
   
+
   let action =
-    $(` <div  class="action"><img id='${element.id}' src="${element.link}" alt=""><div class="description">
- <p>${element.description}</p>
-  <i id='${element.id}'  class="bi bi-heart"><svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+    $(` <div  class="action"><img  src="${element.link}" alt=""><div class="description">
+ <p >${element.description}</p>
+  <i class="bi bi-heart"><svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
    </svg></i>
 </div>
 </div>`);
+
 $(`svg`).on("click", () => {
-    addFav(element);
-    element.isPropagationStopped();
+  
+    favourirte.push({
+        link:`${element.link}`,
+        description:`${element.description}`
+        
+        
+    })
+    localStorage.setItem('Myfav', JSON.stringify(favourirte))
+    action.appendTo(movieFavourite)
+    element.isPropagationStopped()
+    
+   
   });
+
   
   action.appendTo(movie);
 });
@@ -192,9 +225,15 @@ romantic.forEach((element,index) => {
     </div>
     </div>`);
   $(`svg`).on("click", () => {
-    addFav(element);
-    console.log(index);
-    element.isPropagationStopped();
+    favourirte.push({
+        link:`${element.link}`,
+        description:`${element.description}`
+        
+        
+    })
+    localStorage.setItem('Myfav', JSON.stringify(favourirte))
+    romantic.appendTo(movieFavourite)
+    element.isPropagationStopped()
   });
   romantic.appendTo(movieTwo);
 });
@@ -239,6 +278,19 @@ TV.forEach((element) => {
        </svg></i>
     </div>
     </div>`);
+    $(`svg`).on("click", () => {
+        favourirte.push({
+            link:`${element.link}`,
+            description:`${element.description}`
+            
+            
+        })
+        localStorage.setItem('Myfav', JSON.stringify(favourirte))
+        TV.appendTo(movieFavourite)
+        element.isPropagationStopped()
+      });
+    
+
   TV.appendTo(movieThree);
 });
 
@@ -288,20 +340,69 @@ Top.forEach((element) => {
 });
 /*Save*/
 
-function addFav(obj) {
-  alert("move was added");
-  const body = $(`body`);
-  const movieFavourite = $(`.movieFavourite`);
-  const Favourite =
-    $(` <div class="tv"><img src="${obj.link}" alt=""><div class="description">
-                 <p>${obj.description}</p>
-                 <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                   </svg></i>
-                </div>
-                </div>`);
-  Favourite.appendTo(movieFavourite);
-}
+
+
+//FAVourirte
+    // let favourirte=[
+    //     {
+    //         link: "./img/friends.jpeg",
+    //         description: "comedy series family IMDb :8.8/10",
+    //       },
+    // ]
+    
+
+    favourirte.forEach((element,index)=>{
+        const body =$(`body`)
+        let movieFavourite =$(`.movieFavourite`)
+        
+         const Favourite=$(` <div class="tv"><img src="${element.link}" alt=""><div class="description">
+         <p>${element.description}</p>
+         <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+           </svg></i>
+        </div>
+        </div>`)
+        $("svg").on(`click`,()=>{ //edit 
+            Favourite.remove()
+            favourirte.splice(index,1)
+            if (favourirte.length>0) {
+                localStorage.setItem("Myfav",JSON.stringify(favourirte))
+            }else{
+                localStorage.setItem("Myfav",JSON.stringify([]))
+            }
+            
+        //    
+        //    
+        })
+        
+        Favourite.appendTo(movieFavourite)
+        })
+
+
+    
+
+
+//old
+// function addFav(obj) {
+//   alert("move was added");
+//   const body = $(`body`);
+//   const movieFavourite = $(`.movieFavourite`);
+//   const Favourite =
+//     $(` <div class="tv"><img src="${obj.link}" alt=""><div class="description">
+//                  <p>${obj.description}</p>
+//                  <i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+//                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+//                    </svg></i>
+//                 </div>
+//                 </div>`);
+//   Favourite.appendTo(movieFavourite);
+// }
+
+
+// $(`svg`).on("click", () => {
+//     addFav(element);
+//     console.log(index);
+//     element.isPropagationStopped();
 
 
 
