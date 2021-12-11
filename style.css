@@ -142,7 +142,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 200px;
-    background-color: red;
+    background-color: black;
 }
 
 .romantic:hover{
@@ -153,7 +153,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 200px;
-    background-color: red;
+    background-color: black;
 }
 .tv:hover{
     box-shadow: 2px 2px 2px red;
@@ -181,9 +181,22 @@ justify-content: space-around;
 
 i{
     position: absolute;
-    right: 0px;
+    right: 2px;
     bottom: 0px;
 }
+i:hover{
+    color: red;
+    
+ }
+ svg:hover{
+   transform: scale(1.2); 
+ }
+ a:hover{
+     color: red;
+ }
+ button:hover{
+     color: red;
+ }
 .top{
     width: 100%;
     height: 100%;
@@ -234,6 +247,9 @@ i{
     width: 200px;
     height: 185px;
 } 
+img:hover{
+    transform: scale(0.975);
+}
 
 /*Favourite*/
 .movieFavourite{
@@ -254,3 +270,4 @@ i{
     justify-content: space-around;
     }
     /*Save*/
+    
