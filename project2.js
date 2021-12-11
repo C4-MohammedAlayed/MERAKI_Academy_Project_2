@@ -1,3 +1,5 @@
+
+
 //show/hide Favourite
 $(".showFavourite").on(`click`, () => {
   $(".Favourite").show();
@@ -181,7 +183,6 @@ $(`svg`).on("click", () => {
   
   action.appendTo(movie);
 });
-
 
 
 //romantic
@@ -419,4 +420,3 @@ Top.forEach((element) => {
 
 
 // save 2
- 
