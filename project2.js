@@ -103,7 +103,7 @@ $(`#dark`).on(`click`, () => {
   });
   
 });
-
+// local storage
 let favourirte = [];
 let movieFavourite = $(`.movieFavourite`);
 function check() {
