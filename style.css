@@ -165,9 +165,7 @@ justify-content: space-around;
     background-color: black;
     position: relative;
     padding-left: 10px;
-    color: white;
-    
-    
+    color: white;  
 }
 .container .sub h2{
     color: white;
@@ -179,15 +177,13 @@ justify-content: space-around;
     color: white;
 }
 
-
 i{
     position: absolute;
     right: 2px;
     bottom: 0px;
 }
 i:hover{
-    color: red;
-    
+    color: red;  
  }
  svg:hover{
    transform: scale(1.2); 
@@ -207,8 +203,7 @@ i:hover{
     height: 100%;
     background-color: black;
     position: absolute;
-    display:none;
-    
+    display:none;   
 }
 .Favourite{
     width: 100vw;
@@ -247,7 +242,6 @@ i:hover{
     position: absolute;
     display:none;
 }
-
  img{
     width: 200px;
     height: 185px;
@@ -255,7 +249,6 @@ i:hover{
 img:hover{
     transform: scale(0.975);
 }
-
 /*Favourite*/
 .movieFavourite{
     height: 255px;
