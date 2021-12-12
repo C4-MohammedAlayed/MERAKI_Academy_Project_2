@@ -125,8 +125,6 @@ $(`#remove`).on(`click`, () => {
   location.reload();
 });
 
-
-
 //..........action......//
 
 let action = [
@@ -169,7 +167,6 @@ let action = [
 action.forEach((element, index) => {
   const body = $(`body`);
   const movie = $(`.movie`);
-
   let action =
     $(` <div  class="action"><img  src="${element.link}" alt=""><div class="description">
  <p >${element.description}</p>
@@ -365,5 +362,3 @@ favourirte.forEach((element, index) => {
   });
   Favourite.appendTo(movieFavourite);
 });
-
-
