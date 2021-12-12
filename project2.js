@@ -73,9 +73,17 @@ function check() {
 }
 check()
 
+//remove
 function clearFav() {
     localStorage.removeItem('Myfav')
 }
+$(`#remove`).on(`click`,()=>{
+    clearFav()
+    location.reload()
+
+})
+
+
 // const body =$("body")
 // const main =$( `.main`) //<div class="main"></div>
 // main.appendTo(body)
