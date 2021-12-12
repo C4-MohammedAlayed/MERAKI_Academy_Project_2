@@ -306,7 +306,7 @@ TV.forEach((element) => {
 let Top = [
   {
     link: "./img/dark.jpg",
-    description: "Action Fantasy crime IMDb :9/10", //p
+    description: "action Fantasy crime IMDb :9/10", //p
   },
   {
     link: "./img/Inception.jpg",
@@ -322,7 +322,7 @@ let Top = [
   },
   {
     link: "./img/GOT.jpg",
-    description: "Laction series  war <br> IMDb :9.2/10",
+    description: "action series  war <br> IMDb :9.2/10",
   },
   {
     link: "./img/friends.jpeg",
