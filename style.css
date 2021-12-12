@@ -133,7 +133,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 200px;
-    /* border: 2px solid red; */
+    
 }
 .action:hover{
     box-shadow: 2px 2px 2px  red;
@@ -274,5 +274,5 @@ img:hover{
     display: flex;
     justify-content: space-around;
     }
-    /*Save2*/
+    
     
