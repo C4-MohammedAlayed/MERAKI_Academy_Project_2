@@ -108,6 +108,7 @@ height: 85%;
 background-color: black;
 display: flex;
 justify-content: space-around;
+
 }
 .movieTwo{
 height: 85%;
@@ -125,6 +126,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 200px;
+    
     
 }
 .action:hover{
@@ -158,6 +160,7 @@ justify-content: space-around;
     position: relative;
     padding-left: 10px;
     color: white;  
+   
 }
 .container .sub h2{
     color: white;
@@ -237,6 +240,7 @@ i:hover{
  img{
     width: 200px;
     height: 185px;
+    border-radius: 15%;
 } 
 img:hover{
     transform: scale(0.975);
