@@ -106,6 +106,20 @@ $(`#dark`).on(`click`, () => {
 });
 
 
+//login & register
+$('#register').on('click',()=>{
+  $(".login").hide()
+      
+}) 
+$('#back').on('click',()=>{
+  $(".login").show()
+      
+}) 
+$('#enter').on('click',()=>{
+  $(".pageLogin").hide()
+      
+}) 
+
 
 
 // local storage

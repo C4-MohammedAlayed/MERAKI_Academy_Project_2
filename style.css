@@ -28,6 +28,7 @@ a{
 }
 /* page*/
 .page{
+    
     width: 100%;
     height: 100%;
     position: absolute;
@@ -265,4 +266,58 @@ img:hover{
     justify-content: space-around;
     }
     
-    
+    /*login*/
+    label{
+        color: white;
+    }
+    .pageLogin p{
+        color: white;
+    }
+    .pageLogin{
+        width:100%;
+        height: 100vh;
+        position: absolute;
+         background-image: url(./img/pj2.png);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       align-items: center;
+       background-color: black;
+       background-size: cover ;
+       overflow-y: hidden;
+      
+    }  
+    .login{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        border: 2px solid red;
+         
+    }
+    input{
+        font-size: large;
+        border-radius: 10px;
+        border: 2px solid red;
+    }
+    .register{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        
+    }
+    .face{
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
