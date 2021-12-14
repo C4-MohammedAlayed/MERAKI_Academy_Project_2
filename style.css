@@ -186,6 +186,11 @@ justify-content: space-around;
     right: 2px;
     bottom: 0px;
 }
+#trash{
+    position: absolute;
+    right: 2px;
+    bottom: 0px;
+}
 i:hover{
     color: red;  
  }
@@ -299,16 +304,7 @@ img:hover{
        display: none;
       
     }  
-    form{
-        width: 400px;
-        height: 400px;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        background-color: black;
-        position: absolute;
-        border: 2px solid red; 
-    }
+    
     .login{
         width: 400px;
         height: 400px;
@@ -318,6 +314,7 @@ img:hover{
         background-color: black;
         position: absolute;
         border: 2px solid red;
+         
          
     }
     input{
@@ -333,6 +330,9 @@ img:hover{
         flex-direction: column;
         background-color: black;
         position: absolute;
+        border: 2px solid red;
+        
+        
         
     }
     .face{
@@ -348,4 +348,15 @@ img:hover{
     right: 95px;
     top: 24px;;
     }
-  
+  #name{
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 50%;
+      bottom: 94%;
+      font-size: large;
+      font-weight: 700;
+      display: none;
+  }
