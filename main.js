@@ -1,4 +1,5 @@
 //show/hide Favourite
+
 $(".showFavourite").on(`click`, () => {
   $(".Favourite").show();
   $(".containerThree").hide(); //
@@ -60,21 +61,47 @@ $("svg").on(`click`, () => {
 
 $(".signup").on("click",()=>{
   $(".pageLogin").show()
+  massage.hide()
   $(".pageLogin").css({
     display:"flex"
   })
 })
+let account =[{
+  user1 :"ayed",
+  password:"flex"
+}]
+
+console.log();
+let login = $(`#usernameL`)
+let register = $(`#usernameR`)
+let loginP = $(`#passwordL`)
+let registerP = $(`#passwordR`)
 
 $("#register").on("click", () => {
   $(".login").hide();
 });
+ 
 $("#back").on("click", () => {
-  $(".login").show();
-});
+  login.val(register.val())
+  loginP.val(registerP.val())
 
-$("#enter").on("click", () => {
-  $(".pageLogin").hide();
+  $(".login").show();
+  
 });
+ 
+let massage = $(`<P style="color: red;">wrong password or user name</P>`)
+$("#enter").on("click", () => {
+if (login.val()=== register.val() && loginP.val()=== registerP.val() ) {
+  $(".pageLogin").hide();
+
+}else{
+  massage.show()
+  massage.appendTo($(`.face`))
+}
+   
+  });
+
+   
 
 
 //light mode
@@ -128,7 +155,7 @@ $.ajax({
   success: function (result) {
     console.log(result.results);
  
-
+    
 //https://image.tmdb.org/t/p/w300/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg
 //poster_path
 //vote_average
