@@ -343,36 +343,15 @@ TV.forEach((element) => {
 
 //Top
 
-
+for (let i = 0; i < 14; i++) {
+ 
 let Top = [
   {
-    link:`https://image.tmdb.org/t/p/w300${result.results[0].poster_path}`,
-    description: `${result.results[0].original_title}<br>vote:${result.results[0].vote_count}<br>IMDb ${result.results[0].vote_average}`
-  },
-  {
-    link:`https://image.tmdb.org/t/p/w300${result.results[1].poster_path}`,
-    description: `${result.results[1].original_title}<br>vote:${result.results[1].vote_count}<br>IMDb ${result.results[1].vote_average}`
-  },
-  {
-    link:`https://image.tmdb.org/t/p/w300${result.results[2].poster_path}`,
-    description: `${result.results[2].original_title}<br>vote:${result.results[2].vote_count}<br>IMDb ${result.results[2].vote_average}`
-  },
-  {
-    link:`https://image.tmdb.org/t/p/w300${result.results[3].poster_path}`,
-    description: `${result.results[3].original_title}<br>vote:${result.results[3].vote_count}<br>IMDb ${result.results[3].vote_average}`
-  },
-  {
-    link:`https://image.tmdb.org/t/p/w300${result.results[4].poster_path}`,
-    description: `${result.results[4].original_title}<br>vote:${result.results[4].vote_count}<br>IMDb ${result.results[4].vote_average}`
-  },
-  {
-    link:`https://image.tmdb.org/t/p/w300${result.results[5].poster_path}`,
-    description: `${result.results[5].original_title}<br>vote:${result.results[5].vote_count}<br>IMDb ${result.results[5].vote_average}`
+    link:`https://image.tmdb.org/t/p/w300${result.results[i].poster_path}`,
+    description: `${result.results[i].original_title}<br>vote:${result.results[i].vote_count}<br>IMDb ${result.results[i].vote_average}`
   },
   
 ];
-
-
 Top.forEach((element) => {
   const body = $(`body`);
   const topMovie = $(`.topMovie`);
@@ -386,6 +365,11 @@ Top.forEach((element) => {
 
   top.appendTo(topMovie);
 });
+
+
+}
+
+
 
 favourirte.forEach((element, index) => {
   const body = $(`body`);
