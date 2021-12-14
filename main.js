@@ -90,13 +90,14 @@ $("#back").on("click", () => {
 });
  
 let massage = $(`<P style="color: red;">wrong password or user name</P>`)
+massage.appendTo($(`.face`))
 $("#enter").on("click", () => {
 if (login.val()=== register.val() && loginP.val()=== registerP.val() ) {
   $(".pageLogin").hide();
 
 }else{
   massage.show()
-  massage.appendTo($(`.face`))
+  
 }
    
   });
