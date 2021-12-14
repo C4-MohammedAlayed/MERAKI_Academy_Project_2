@@ -163,6 +163,14 @@ justify-content: space-around;
     color: white;  
    
 }
+.descriptionTop{
+    height: 86px;
+    background-color: black;
+    position: relative;
+    padding-left: 10px;
+    color: white;  
+   
+}
 .container .sub h2{
     color: white;
 }
@@ -173,7 +181,7 @@ justify-content: space-around;
     color: white;
 }
 
-i{
+#heart{
     position: absolute;
     right: 2px;
     bottom: 0px;
@@ -260,10 +268,11 @@ img:hover{
     }
 /*topMovie*/
     .topMovie{
-        height: 255px;
+        height: 275px;
     background-color: black;
     display: flex;
     justify-content: space-around;
+    
     }
     
     /*login*/
@@ -287,6 +296,16 @@ img:hover{
        overflow-y: hidden;
       
     }  
+    form{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        border: 2px solid red; 
+    }
     .login{
         width: 400px;
         height: 400px;
@@ -321,3 +340,9 @@ img:hover{
         flex-direction: column;
         gap: 10px;
     }
+    #star{
+        color: gold;
+    right: 95px;
+    top: 24px;;
+    }
+  
