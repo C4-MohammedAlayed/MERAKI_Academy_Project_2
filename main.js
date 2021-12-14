@@ -58,6 +58,25 @@ $("svg").on(`click`, () => {
   $(`.top`).show();
 });
 
+$(".signup").on("click",()=>{
+  $(".pageLogin").show()
+  $(".pageLogin").css({
+    display:"flex"
+  })
+})
+
+$("#register").on("click", () => {
+  $(".login").hide();
+});
+$("#back").on("click", () => {
+  $(".login").show();
+});
+
+$("#enter").on("click", () => {
+  $(".pageLogin").hide();
+});
+
+
 //light mode
 $(`#light`).on(`click`, () => {
   $(".movieThree").css({
@@ -101,6 +120,8 @@ $(`#dark`).on(`click`, () => {
     color: "white",
   });
 });
+
+
 //rpi
 $.ajax({
   url: "https://api.themoviedb.org/3/discover/movie?page=1&include_video=false&include_adult=f[…]esc&language=en-US&api_key=1bfa430aada4409bfa6a3c5528128e8a",
@@ -116,16 +137,6 @@ $.ajax({
 
 //login & register
 // let account =[]
-$("#register").on("click", () => {
-  $("#login").hide();
-});
-$("#back").on("click", () => {
-  $("#login").show();
-});
-
-$("#enter").on("click", () => {
-  $(".pageLogin").hide();
-});
 
 //rpi
 // const settings = {
