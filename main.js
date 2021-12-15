@@ -436,14 +436,13 @@ Top.forEach((element) => {
 favourirte.forEach((element, index) => {
   const body = $(`body`);
   let movieFavourite = $(`.movieFavourite`);
-
+  const tempButton = $(`<button id="btnHeart"> ${heart}</button></div>`)
   const favouriteMovie =
     $(` <div class="tv"><img src="${element.link}" alt=""><div class="description">
          <p>${element.description}${star}</p>
-         ${trash}
         </div>
         </div>`);
-  $("trash").on(`click`, () => {
+       tempButton.on(`click`, () => {
     favouriteMovie.remove();
     favourirte.splice(index, 1);
     if (favourirte.length > 0) {
@@ -452,6 +451,7 @@ favourirte.forEach((element, index) => {
       localStorage.setItem("Myfav", JSON.stringify([]));
     }
   });
+  tempButton.appendTo(favouriteMovie)
   favouriteMovie.appendTo(movieFavourite);
 });
 
