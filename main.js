@@ -68,8 +68,8 @@ $(".signup").on("click",()=>{
   message.hide()
 })
 
-let message = $(`<P style="color: red;">wrong password or username</P>`)
-message.appendTo($(`.face`))
+let message = $(`<P style="color: red;margin-left: 95px;">wrong password or username</P>`)
+message.appendTo($(`.login`))
 
 console.log();
 let login = $(`#usernameL`)
@@ -96,8 +96,7 @@ $("#enter").on("click", () => {
 if (login.val()=== register.val() && loginP.val()=== registerP.val() ) {
   $(".pageLogin").hide();
   user.text(`${login.val()}`)
-  localStorage.setItem("myUser",login.val())
-                         
+  localStorage.setItem("myUser",login.val())                     
   user.appendTo($(`#name`))
   $(`#name`).show()
 

@@ -210,7 +210,7 @@ i:hover{
  }
  h2:hover{
      transform: scale(1.1);
-     box-shadow: 2px 2px 2px red;
+     color: red !important;
  }
 .top{
     width: 100%;
@@ -299,7 +299,7 @@ img:hover{
         width:100%;
         height: 100vh;
         position: absolute;
-         background-image: url(./img/pj2.png);
+         background-image: url(./img/ayedflexnew.png);
         display: flex;
         justify-content: center;
         flex-direction: column;
