@@ -266,15 +266,19 @@ let action = [
 action.forEach((element, index) => {
   const body = $(`body`);
   const movie = $(`.movie`);
+
+  const tempButton = $(`<button id="btnHeart"> ${heart}</button>`)
   let action =
     $(` <div  class="action"><img  src="${element.link}" alt=""><div class="description">
  <p >${element.description}${star}</p>
- ${heart}
 </div>
 </div>`);
+console.log(element.link);
+    console.log(index);
 
-  $(`svg`).on("click", () => {
-    console.log(element.link);
+    tempButton.on("click", () => {
+    console.log("INSIDE ON",element.link);
+    console.log(index);
     favourirte.push({
       link: `${element.link}`,
       description: `${element.description}`,
@@ -283,6 +287,7 @@ action.forEach((element, index) => {
     action.appendTo(movieFavourite);
     element.isPropagationStopped();
   });
+  tempButton.appendTo(action)
 
   action.appendTo(movie);
 });
@@ -318,14 +323,14 @@ let romantic = [
 romantic.forEach((element, index) => {
   const body = $(`body`);
   const movieTwo = $(`.movieTwo`);
-
+  const tempButton = $(`<button id="btnHeart"> ${heart}</button>`)
   const romantic =
     $(` <div class="romantic"><img src="${element.link}" alt=""><div class="description">
      <p>${element.description}${star}</p>
-     ${heart}
+    
     </div>
     </div>`);
-  $(`svg`).on("click", () => {
+    tempButton.on("click", () => {
     favourirte.push({
       link: `${element.link}`,
       description: `${element.description}`,
@@ -334,6 +339,7 @@ romantic.forEach((element, index) => {
     romantic.appendTo(movieFavourite);
     element.isPropagationStopped();
   });
+  tempButton.appendTo(romantic)
   romantic.appendTo(movieTwo);
 });
 
@@ -368,14 +374,14 @@ let TV = [
 TV.forEach((element) => {
   const body = $(`body`);
   const movieThree = $(`.movieThree`);
-
+  const tempButton = $(`<button id="btnHeart"> ${heart}</button></div>`)
   const TV =
     $(` <div class="tv"><img src="${element.link}" alt=""><div class="description">
      <p>${element.description}${star}</p>
-     ${heart}
+     
     </div>
     </div>`);
-  $(`svg`).on("click", () => {
+    tempButton.on("click", () => {
     favourirte.push({
       link: `${element.link}`,
       description: `${element.description}`,
@@ -384,7 +390,7 @@ TV.forEach((element) => {
     TV.appendTo(movieFavourite);
     element.isPropagationStopped();
   });
-
+  tempButton.appendTo(TV)
   TV.appendTo(movieThree);
 });
 
@@ -402,14 +408,23 @@ let Top = [
 Top.forEach((element) => {
   const body = $(`body`);
   const topMovie = $(`.topMovie`);
+  const tempButton = $(`<button id="btnHeart"> ${heart}</button>`)
 
   const top =
     $(` <div class="tv"><img src="${element.link}" alt=""><div class="descriptionTop">
          <p>${element.description}${star}</p>
-         ${heart}
         </div>
         </div>`);
-
+        tempButton.on("click", () => {
+          favourirte.push({
+            link: `${element.link}`,
+            description: `${element.description}`,
+          });
+          localStorage.setItem("Myfav", JSON.stringify(favourirte));
+          top.appendTo(movieFavourite);
+          element.isPropagationStopped();
+        });
+  tempButton.appendTo(top)
   top.appendTo(topMovie);
 });
 
