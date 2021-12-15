@@ -65,7 +65,7 @@ $(".signup").on("click",()=>{
   $(".pageLogin").css({
     display:"flex"
   })
-  massage.hide()
+  message.hide()
 })
 
 let message = $(`<P style="color: red;">wrong password or username</P>`)
@@ -89,15 +89,15 @@ $("#back").on("click", () => {
   $(".login").show();
   
 });
+let account=[]
  let user =$(`<span></span>`)
-
-
-
 
 $("#enter").on("click", () => {
 if (login.val()=== register.val() && loginP.val()=== registerP.val() ) {
   $(".pageLogin").hide();
   user.text(`${login.val()}`)
+  localStorage.setItem("myUser",login.val())
+                         
   user.appendTo($(`#name`))
   $(`#name`).show()
 
@@ -107,7 +107,9 @@ if (login.val()=== register.val() && loginP.val()=== registerP.val() ) {
 }
    
   });
-
+  user.text(localStorage.getItem("myUser"))
+  user.appendTo($(`#name`))
+  $(`#name`).show()
    
 
 
