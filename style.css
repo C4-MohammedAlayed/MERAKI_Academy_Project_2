@@ -1,384 +1,354 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: cursive, Helvetica, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive, Helvetica, sans-serif;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap :10px;
-    font-size: large;
-    font-weight: 700;   
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: large;
+  font-weight: 700;
 }
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-.main{
-    width: 100vw;
-    height: 100vh;
-    background-color: #eee;
-    position: relative;
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  position: relative;
 }
 /* page*/
-.page{
-    
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-   grid-template-rows: 60px 300px 300px 300px;
-   grid-template-areas:"nav nav nav nav nav nav nav nav nav nav"
-   "mov mov mov mov mov mov mov mov mov mov"
-   "mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2"
-   "mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3"
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 60px 300px 300px 300px;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav"
+    "mov mov mov mov mov mov mov mov mov mov"
+    "mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2 mov2"
+    "mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3 mov3";
 }
 /*start navbar*/
-.nav{
-    grid-area: nav;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-   grid-row: 60px;
-    grid-template-areas:"logo cate cate cate cate cate sort sort sort sort"
-
+.nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-row: 60px;
+  grid-template-areas: "logo cate cate cate cate cate sort sort sort sort";
 }
-.logo{
-    grid-area: logo;
-    background-color: black;
-    color: red;
-    display: flex;
-    justify-content:flex-start ;
-    align-items: center;
-    padding-left: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+.logo {
+  grid-area: logo;
+  background-color: black;
+  color: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.cate{
-    grid-area: cate;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 20px;
+.cate {
+  grid-area: cate;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
-.sort{
-    grid-area: sort;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px
+.sort {
+  grid-area: sort;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
-button{
-    width: 80px;
-    height: 60px;
-    background-color: transparent;
-    border: unset;
-    font-size: large;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
+button {
+  width: 80px;
+  height: 60px;
+  background-color: transparent;
+  border: unset;
+  font-size: large;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
 }
 /* endnavbar*/
-.container{
+.container {
   grid-area: mov;
-  
 }
-.containerTwo{
+.containerTwo {
   grid-area: mov2;
-  
 }
-.containerThree{
-grid-area: mov3;
-  
+.containerThree {
+  grid-area: mov3;
 }
-.sub{
-   min-height: 15%;
-    background-color:black;
-    padding-left: 30px;
-    display: flex;
-    align-items: center;
+.sub {
+  min-height: 15%;
+  background-color: black;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
 }
-.movie{
-height: 85%;
-background-color: black;
-display: flex;
-justify-content: space-around;
-
-
+.movie {
+  height: 85%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
 }
-.movieTwo{
-height: 85%;
-background-color: black;
-display: flex;
-justify-content: space-around;
+.movieTwo {
+  height: 85%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
 }
-.movieThree{
-height: 85%;
-background-color: black;
-display: flex;
-justify-content: space-around;
+.movieThree {
+  height: 85%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
 }
-.action{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    
-    
-    
+.action {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
-.action:hover{
-    box-shadow: 2px 2px 2px  red;
-    cursor: pointer;
+.action:hover {
+  box-shadow: 2px 2px 2px red;
+  cursor: pointer;
 }
-.romantic{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    background-color: black;
-   
+.romantic {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: black;
 }
 
-.romantic:hover{
-    box-shadow: 2px 2px 2px red;
-    cursor: pointer;
+.romantic:hover {
+  box-shadow: 2px 2px 2px red;
+  cursor: pointer;
 }
-.tv{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    background-color: black;
-    
+.tv {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: black;
 }
-.tv:hover{
-    box-shadow: 2px 2px 2px red;
-    cursor: pointer;
+.tv:hover {
+  box-shadow: 2px 2px 2px red;
+  cursor: pointer;
 }
-.description{
-    height: 50px;
-    background-color: black;
-    position: relative;
-    padding-left: 10px;
-    color: white;  
-   
+.description {
+  height: 50px;
+  background-color: black;
+  position: relative;
+  padding-left: 10px;
+  color: white;
 }
-.descriptionTop{
-    height: 86px;
-    background-color: black;
-    position: relative;
-    padding-left: 10px;
-    color: white;  
-   
+.descriptionTop {
+  height: 86px;
+  background-color: black;
+  position: relative;
+  padding-left: 10px;
+  color: white;
 }
-.container .sub h2{
-    color: white;
+.container .sub h2 {
+  color: white;
 }
-.containerTwo .sub h2{
-    color: white;
+.containerTwo .sub h2 {
+  color: white;
 }
-.containerThree .sub h2{
-    color: white;
+.containerThree .sub h2 {
+  color: white;
 }
 
-/* #heart{
-    position: absolute;
-    right: 2px;
-    bottom: 0px;
-} */
-#trash{
-    position: absolute;
-    right: 2px;
-    bottom: 0px;
+i:hover {
+  color: red;
 }
-i:hover{
-    color: red;  
- }
- 
- svg:hover{
-   transform: scale(1.2); 
- }
- a:hover{
-     color: red;
- }
- button:hover{
-     color: red;
- }
- h2:hover{
-     transform: scale(1.1);
-     color: red !important;
- }
-.top{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    display:none;   
+
+svg:hover {
+  transform: scale(1.2);
 }
-.Favourite{
-    width: 100vw;
-    height: 100vh;
-    background-color:black;
-    position: absolute;
-    display:none;
-    overflow-y: hidden;
+a:hover {
+  color: red;
 }
-.history{
-    width: 100%;
-    height: 100%;
-    background-color: lightblue;
-    position: absolute;
-    display:none;
-    
+button:hover {
+  color: red;
 }
-.showAction{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    display:none;
+h2:hover {
+  transform: scale(1.1);
+  color: red !important;
 }
-.showRomantic{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    display:none;
+.top {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  display: none;
 }
-.showTV{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    display:none;
+.Favourite {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  display: none;
+  overflow-y: hidden;
 }
- img{
-    width: 200px;
-    height: 193px;
-    border-radius: 5px;
-} 
-img:hover{
-    transform: scale(0.975);
+.history {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  position: absolute;
+  display: none;
+}
+.showAction {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  display: none;
+}
+.showRomantic {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  display: none;
+}
+.showTV {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  display: none;
+}
+img {
+  width: 200px;
+  height: 193px;
+  border-radius: 5px;
+}
+img:hover {
+  transform: scale(0.975);
 }
 /*Favourite*/
-.movieFavourite{
-    height: 255px;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap:wrap;
-    row-gap: 40px;
-
-    }
-    h3{
-        color: white;
-    }
-/*topMovie*/
-    .topMovie{
-        height: 275px;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap:wrap;
-    row-gap: 40px;
-    
-    }
-    
-    /*login*/
-    label{
-        color: white;
-    }
-    .pageLogin p{
-        color: white;
-    }
-    .pageLogin{
-        width:100%;
-        height: 100vh;
-        position: absolute;
-         background-image: url(./img/ayedflexnew.png);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-       align-items: center;
-       background-color: black;
-       background-size: cover ;
-       overflow-y: hidden;
-       display: none;
-      
-    }  
-    
-    .login{
-        width: 400px;
-        height: 400px;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        background-color: black;
-        position: absolute;
-        border: 2px solid red;
-         
-         
-    }
-    input{
-        font-size: large;
-        border-radius: 10px;
-        border: 2px solid red;
-    }
-    .register{
-        width: 400px;
-        height: 400px;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        background-color: black;
-        position: absolute;
-        border: 2px solid red;
-        
-        
-        
-    }
-    .face{
-        height: 75%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-    #star{
-        color: gold;
-    right: 95px;
-    top: 24px;;
-    }
-  #name{
-      color: red;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      right: 50%;
-      bottom: 94%;
-      font-size: large;
-      font-weight: 700;
-      display: none;
-  }
-  
-  #btnHeart {
-    font-size: 10px;
-    width: 95%;
-    height: 20px;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    /* overflow: hidden; */
-    margin-top: -23px;
+.movieFavourite {
+  height: 255px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 40px;
 }
-.space{
-    background-color: black;
-    width: 100%;
-    height: 65px;
+h3 {
+  color: white;
+}
+/*topMovie*/
+.topMovie {
+  height: 275px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+/*login*/
+label {
+  color: white;
+}
+.pageLogin p {
+  color: white;
+}
+.pageLogin {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url(./img/ayedflexnew.png);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  overflow-y: hidden;
+  display: none;
+}
+
+.login {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  border: 2px solid red;
+}
+input {
+  font-size: large;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+.register {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  border: 2px solid red;
+}
+.face {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#star {
+  color: gold;
+  right: 95px;
+  top: 24px;
+}
+#name {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 50%;
+  bottom: 94%;
+  font-size: large;
+  font-weight: 700;
+  display: none;
+}
+
+#btnHeart {
+  font-size: 10px;
+  width: 95%;
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -23px;
+}
+.space {
+  background-color: black;
+  width: 100%;
+  height: 65px;
+}
+#trend{
+    margin-right: 15px;
 }

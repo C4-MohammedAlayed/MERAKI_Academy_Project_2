@@ -1,224 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project2</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-</head>
-<body>
-     <div class="main">
-         <div class="page">
-            
-           <div class="nav">
-                <div class="logo">
-                    <h1>AyedFLEX</h1>
-                </div>
-                <div class="cate">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a id="Action" href="#">Action</a></li>
-                        <li><a id="Romantic" href="#">Romantic</a></li>
-                        <li><a id="TV" href="#">TVseries</a></li>
-                    </ul>
-                </div>
-            <div class="sort" >
-                <button class="signup">login</button>
-                <button class="showTop">Top</button>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="page">
+        <div class="nav">
+          <div class="logo">
+            <h1>AyedFLEX</h1>
+          </div>
+          <div class="cate">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a id="Action" href="#">Action</a></li>
+              <li><a id="Romantic" href="#">Romantic</a></li>
+              <li><a id="TV" href="#">TVseries</a></li>
+            </ul>
+          </div>
+          <div class="sort">
+            <button class="signup">Login</button>
+            <button id="trend" class="showTop">Trending</button>
             <button class="showFavourite">Favourite</button>
-            <!-- <button class="showHistory" >History</button> -->
-            <button id="dark" >dark</button>
-            <button id="light" >light</button>
-            <div id="name" ></div>
-           
-            
+            <button id="dark">Dark</button>
+            <button id="light">Light</button>
+            <div id="name"></div>
+          </div>
         </div>
-    </div>
-    <div class=container>
-        <div class="sub"><h2>action:</h2></div>
-        <div class="movie">     
-    </div>
-        </div> 
+        <div class="container">
+          <div class="sub"><h2>action:</h2></div>
+          <div class="movie"></div>
+        </div>
 
-    <div class=containerTwo>
-        <div class="sub"><h2>romantic:</h2></div>
-        <div class="movieTwo"> 
-           
-    </div>
-        </div> 
-    <div class=containerThree>
-        <div class="sub"><h2>TV series:</h2></div>
-        <div class="movieThree">    
-    </div>
-        </div> 
+        <div class="containerTwo">
+          <div class="sub"><h2>romantic:</h2></div>
+          <div class="movieTwo"></div>
+        </div>
+        <div class="containerThree">
+          <div class="sub"><h2>TV series:</h2></div>
+          <div class="movieThree"></div>
+        </div>
         <!-- Favourite -->
         <div class="Favourite">
-            <!-- <div class="page"> -->
-                <div class="nav">
-                     <div class="logo">
-                         <h1>AyedFLEX</h1>
-                     </div>
-                     <div class="cate">
-                         <ul>
-                             <li><a href="#">Favourite</a></li>
-                         </ul>
-                     </div>
-                 <div class="sort">
-                    <button class="showpage">Home</button>
-                   <button id="remove">clear</button>
-             </div>
-         </div>
-         <!-- </div>  -->
-         <div class=container>
-            <!-- <div class="sub"><h3>favourite:</h3></div> -->
-            <div class="movieFavourite">   
-        </div>
-            </div>  
+          <div class="nav">
+            <div class="logo">
+              <h1>AyedFLEX</h1>
+            </div>
+            <div class="cate">
+              <ul>
+                <li><a href="#">Favourite</a></li>
+              </ul>
+            </div>
+            <div class="sort">
+              <button class="showpage">Home</button>
+              <button id="remove">clear</button>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="movieFavourite"></div>
+          </div>
         </div>
         <!-- top -->
         <div class="top">
-            <!-- <div class="page"> -->
-                <div class="nav">
-                     <div class="logo">
-                         <h1>AyedFLEX</h1>
-                     </div>
-                     <div class="cate">
-                         <ul>
-                             <li><a href="#">Top</a></li>
-                         </ul>
-                     </div>
-                 <div class="sort">
-                    <button  class="showpage">Home</button>
-             </div>
-         </div>
-         <!-- </div>   -->
-         <div class=container>
+          <div class="nav">
+            <div class="logo">
+              <h1>AyedFLEX</h1>
+            </div>
+            <div class="cate">
+              <ul>
+                <li><a href="#">Top</a></li>
+              </ul>
+            </div>
+            <div class="sort">
+              <button class="showpage">Home</button>
+            </div>
+          </div>
+
+          <div class="container">
             <div class="sub"><h3></h3></div>
-            <div class="topMovie">
-        </div>
-        </div>
+            <div class="topMovie"></div>
+          </div>
         </div>
         <!-- endTop -->
         <!-- start new "showAction" -->
         <div class="showAction">
-            <div class="page">
-                <div class="nav">
-                     <div class="logo">
-                         <h1>AyedFLEX</h1>
-                     </div>
-                     <div class="cate">
-                         <ul>
-                             <li><a href="#">Action</a></li> 
-                         </ul>
-                     </div>
-                 <div class="sort">
-                    <button class="showpage">Home</button>   
-             </div>
-         </div>
-         </div> 
-         <div class=container>
+          <div class="page">
+            <div class="nav">
+              <div class="logo">
+                <h1>AyedFLEX</h1>
+              </div>
+              <div class="cate">
+                <ul>
+                  <li><a href="#">Action</a></li>
+                </ul>
+              </div>
+              <div class="sort">
+                <button class="showpage">Home</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
             <div class="space"></div>
             <!-- <div class="sub"><h2>action:</h2></div> -->
-            <div class="movie">     
-        </div>
-            </div>  
+            <div class="movie"></div>
+          </div>
         </div>
         <!-- end showAction-->
         <!-- start showromantic -->
         <div class="showRomantic">
-                <div class="page">
-                    <div class="nav">
-                         <div class="logo">
-                             <h1>AyedFLEX</h1>
-                         </div>
-                         <div class="cate">
-                             <ul>
-                                 <li><a href="#">Romantic</a></li>
-                                 
-                             </ul>
-                         </div>
-                     <div class="sort">
-                        <button class="showpage">Home</button> 
-                 </div>
-             </div>
-             </div> 
-             <div class=containerTwo>
-                <div class="space"></div>
-                <!-- <div class="sub"><h2>romantic:</h2></div> -->
-                <div class="movieTwo">    
+          <div class="page">
+            <div class="nav">
+              <div class="logo">
+                <h1>AyedFLEX</h1>
+              </div>
+              <div class="cate">
+                <ul>
+                  <li><a href="#">Romantic</a></li>
+                </ul>
+              </div>
+              <div class="sort">
+                <button class="showpage">Home</button>
+              </div>
             </div>
-                </div>  
+          </div>
+          <div class="containerTwo">
+            <div class="space"></div>
+            <!-- <div class="sub"><h2>romantic:</h2></div> -->
+            <div class="movieTwo"></div>
+          </div>
         </div>
         <!-- end showromantic -->
         <!-- start ShowTV -->
         <div class="showTV">
-        <div class="page">
+          <div class="page">
             <div class="nav">
-                 <div class="logo">
-                     <h1>AyedFLEX</h1>
-                 </div>
-                 <div class="cate">
-                     <ul>
-                         <li><a href="#">TVseries</a></li>
-                         
-                     </ul>
-                 </div>
-             <div class="sort">
+              <div class="logo">
+                <h1>AyedFLEX</h1>
+              </div>
+              <div class="cate">
+                <ul>
+                  <li><a href="#">TVseries</a></li>
+                </ul>
+              </div>
+              <div class="sort">
                 <button class="showpage">Home</button>
-             
-         </div>
-     </div>
-     </div>
-     <div class=containerThree>
-         <div class="space"></div>
-        <!-- <div class="sub"><h2>TV series:</h2></div> -->
-        <div class="movieThree">   
-    </div>
+              </div>
+            </div>
+          </div>
+          <div class="containerThree">
+            <div class="space"></div>
+            <div class="movieThree"></div>
+          </div>
         </div>
-    </div>
         <!-- end TV -->
         <!-- loginPage -->
-        <div class="pageLogin"> 
-        
-            <div class="register">
-                <div class="logo"> <h2>Register</h2></div>
-                <div  class="face">
-                    <label for="">Username</label>
-                    <div><input id="usernameR"  type="text" placeholder="username" required >
-                    </div>
-                    <label for="">Passwoed</label>
-                    <div><input id="passwordR" type="password" placeholder="passwoed" required></div>
-                    <button id="back" >Register</button>
-                    
-                </div>
-    
+        <div class="pageLogin">
+          <div class="register">
+            <div class="logo"><h2>Register</h2></div>
+            <div class="face">
+              <label for="">Username</label>
+              <div>
+                <input
+                  id="usernameR"
+                  type="text"
+                  placeholder="username"
+                  required
+                />
+              </div>
+              <label for="">Passwoed</label>
+              <div>
+                <input
+                  id="passwordR"
+                  type="password"
+                  placeholder="passwoed"
+                  required
+                />
+              </div>
+              <button id="back">Register</button>
             </div>
-       
-
-       
-            <div class="login">
-                <div class="logo"> <h2>login</h2></div>
-                <div  class="face">
-                    <label for="">Username</label>
-                    <div><input id="usernameL" type="text" placeholder="username" required></div>
-                    <label for="">Password</label>
-                    <div><input id="passwordL" type="password" placeholder="password" required></div>
-                    <button id="enter" >login</button>
-                    <div><p>Do you have an account ?</p></div>
-                    <button id="register">register</button>
-                </div>
-    
+          </div>
+          <div class="login">
+            <div class="logo"><h2>login</h2></div>
+            <div class="face">
+              <label for="">Username</label>
+              <div>
+                <input
+                  id="usernameL"
+                  type="text"
+                  placeholder="username"
+                  required
+                />
+              </div>
+              <label for="">Password</label>
+              <div>
+                <input
+                  id="passwordL"
+                  type="password"
+                  placeholder="password"
+                  required
+                />
+              </div>
+              <button id="enter">login</button>
+              <div><p>Do you have an account ?</p></div>
+              <button id="register">register</button>
             </div>
-       
-       
-            
+          </div>
         </div>
         <!-- end login -->
-    </div> 
-    </div>  
-</body>
-<script src="./main.js"></script>
+      </div>
+    </div>
+    <audio controls  >
+        <source id="audio" src="./Sound/Netflix-Intro-Sound-Effect.mp3" type="audio/ogg">
+        <source src="./Sound/Netflix-Intro-Sound-Effect.mp3" type="audio/mpeg">
+      
+      </audio>
+  </body>
+  <script src="./main.js"></script>
 </html>
