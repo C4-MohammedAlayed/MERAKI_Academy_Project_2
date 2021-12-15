@@ -165,7 +165,6 @@ $.ajax({
     let movieFavourite = $(`.movieFavourite`);
     function check() {
       if (localStorage.getItem("Myfav")) {
-        console.log(localStorage.getItem("Myfav"));
         favourirte = JSON.parse(localStorage.getItem("Myfav"));
       } else {
         localStorage.setItem("Myfav", JSON.stringify([]));
@@ -237,8 +236,6 @@ $.ajax({
  <p >${element.description}${star}</p>
 </div>
 </div>`);
-      console.log(element.link);
-      console.log(index);
 
       tempButton.on("click", () => {
         console.log("INSIDE ON", element.link);
